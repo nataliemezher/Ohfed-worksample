@@ -5,8 +5,11 @@
 body {
   padding-left: 20px;
   padding-right: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+/* NAV STYLE */
 nav {
   display: flex;
   padding: 20px;
@@ -29,6 +32,24 @@ nav {
   color: purple;
 }
 
+.nav-search {
+  display: flex;
+}
+.nav-search input{
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 2px 2px;
+}
+  
+.nav-search button{
+  border: none;
+  background-color: rgb(220, 220, 220);
+}
+/* END NAV STYLE*/
+
+/* CONTENT STYLE  */
 
 .body-header img {
   width: 100%;
@@ -36,24 +57,25 @@ nav {
 .body-header {
   display: flex;
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 .popular-books{
   display: flex;
 }
 .headertext-center {
+  max-width: 640px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-95%, -150%);
-  font-size: 40px;
+  top: 30%;
+  left: 10%;
+  font-size: 38px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 .headertext-small {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-120%, -200%);
+  left: 10%;
   font: 15px;
 }
 .books-heading{
@@ -84,9 +106,11 @@ nav {
 .app-section {
   display: grid;
   grid-template-columns: 1fr 1fr;  
-  height: 400px;
-  margin: 20px;
+  height: 580px;
+  margin-top: 60px;
   background-color: rgb(255, 228, 255);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 
 }
 .app-textarea{
@@ -110,6 +134,9 @@ nav {
   font-size: 36px;
   padding-bottom: 15px;
 }
+.questions-fr{
+  padding-top: 15px;
+}
 .questions-fr div{
   padding-bottom: 25px;
 }
@@ -122,3 +149,58 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.question-single{
+  font-size: 20px;
+}
+
+/* END CONTENT STYLE */
+
+
+/*  FOOTER STYLE*/
+footer{
+  display: flex;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  flex-direction: column;
+}
+footer a {
+  color: white;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+}
+.companylinks{
+  display: flex;
+  flex-direction: column;
+}
+.worklinks{
+  display: flex;
+  flex-direction: column;
+
+}
+.booklinks{
+  display: flex;
+  flex-direction: column;
+
+}
+.quicklinks{
+  display: flex;
+  flex-direction: column;
+
+}
+.footer-others{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+}
+
+.link-title{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+/*END FOOTER STYLE*/
