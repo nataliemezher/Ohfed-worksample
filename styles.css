@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-right div {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo{
+  display: flex;
+  flex-direction: row;
+}
+.nav-logo img {
+  height: 35px;
+  color: purple;
+}
+
+
+.body-header img {
+  width: 100%;
+}
+.body-header {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.popular-books{
+  display: flex;
+}
+.headertext-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-95%, -150%);
+  font-size: 40px;
+}
+.headertext-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -200%);
+  font: 15px;
+}
+.books-heading{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 22px;
+  font-size: 25px;
+
+}
+#book-browse{
+  color: grey;
+  font-size: 18px;
+}
+.books-booklist{
+  display: flex;
+  flex-wrap: wrap;
+}
+.books-booklist div {
+  padding: 22px;
+}
+.books-booklist img {
+  width: 200px;
+  height: 260px;
+  display: flex;
+  flex-direction: row;
+}
+.app-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  height: 400px;
+  margin: 20px;
+  background-color: rgb(255, 228, 255);
+
+}
+.app-textarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-textbig{
+  font-size: 40px;
+}
+.app-textsmall{
+  font-size: 16px;
+}
+.site-questions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+}
+#questions-title{
+  font-size: 36px;
+  padding-bottom: 15px;
+}
+.questions-fr div{
+  padding-bottom: 25px;
+}
+.hr-q{
+  border-top: 4px solid ;
+  opacity: 20%;
+}
+.questions-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
