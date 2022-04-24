@@ -36,6 +36,10 @@ nav {
 .nav-search {
   display: flex;
 }
+.menuhidden{ 
+  visibility: hidden;
+
+}
 .nav-search input{
   border: none;
   cursor: pointer;
@@ -48,16 +52,8 @@ nav {
   border: none;
   background-color: rgb(220, 220, 220);
 }
-.drop-menu{
-  display:none; 
-  width: 15px;
-  height: 15px;
-}
-.drop-menu img{
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
+
+
 
 .dropdown-content{
   visibility: hidden;
@@ -123,6 +119,9 @@ nav {
 .books-booklist{
   display: flex;
   flex-wrap: wrap;
+}
+.checked{
+  color: orange;
 }
 .books-booklist div {
   padding: 22px;
@@ -284,13 +283,32 @@ footer a {
     height: 450px;
   }
   .footer-links{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
   }
   .nav-company {
   visibility: hidden;
   }
   .nav-readlist{
     visibility: hidden;
+  }
+  .dropdown{ 
+    visibility:visible;
+  
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
+
   }
   .nav-books{
     visibility: hidden;
@@ -309,10 +327,14 @@ footer a {
     grid-template-rows: 1fr 1fr;
 
   }
+  .menuhidden{ 
+    visibility:visible;
+  
+  }
 
   nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
 
   }
   

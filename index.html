@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Book Place</title>
   </head>
@@ -25,6 +26,9 @@
         <div class="nav-readlist">Readlist</div>
         <div class="nav-profile">
           <img src="images/profileicon.svg" width="20px" height="20px" alt="" />
+        </div>
+        <div class="dropdown">
+          <button><img src="images/menu.svg" alt="" /></button>
         </div>
         <!--DROP MENU HIDDEN BY DEFAULT-->
        <!--- <div class="drop-menu">
@@ -60,37 +64,67 @@
         <div class="books-booklist">
           <div>
             <img src="images/stevej.jpg" alt="stevejob" />
-            <div class="booklist-rating"></div>
+            <div class="booklist-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></div>
             <p class="booklist-title">Steve Jobs</p>
             <p class="booklist-author">Walter Isaac</p>
           </div>
           <div>
-            <img src="images/throne.jpg" alt="stevejob" />
-            <div class="booklist-rating"></div>
+            <img src="images/throne.jpg" alt="thronebook" />
+            <div class="booklist-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
             <p class="booklist-title">Throne of Glass</p>
             <p class="booklist-author">Sarah J Maass</p>
           </div>
           <div>
-            <img src="images/unspeakable.jpg" alt="stevejob" />
-            <div class="booklist-rating"></div>
+            <img src="images/unspeakable.jpg" alt="unspeakable" />
+            <div class="booklist-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></div>
             <p class="booklist-title">Unspeakable things</p>
             <p class="booklist-author">Jess Lourey</p>
           </div>
           <div>
             <img src="images/unspeakable.jpg" alt="stevejob" />
-            <div class="booklist-rating"></div>
+            <div class="booklist-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span></div>
             <p class="booklist-title">Unspeakable things</p>
             <p class="booklist-author">Jess Lourey</p>
           </div>
           <div class="hide-book">
             <img src="images/unspeakable.jpg" alt="stevejob" />
-            <div class="booklist-rating"></div>
+            <div class="booklist-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span></div>
             <p class="booklist-title">Unspeakable things</p>
             <p class="booklist-author">Jess Lourey</p>
           </div>
           <div class="hide-book">
             <img src="images/unspeakable.jpg" alt="stevejob" />
-            <div class="booklist-rating"></div>
+            <div class="booklist-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></div>
             <p class="booklist-title">Unspeakable things</p>
             <p class="booklist-author">Jess Lourey</p>
           </div>
@@ -188,10 +222,12 @@
     </div>
 
     <footer>
-      <div class="footer-links">
-        <div>
+      <div>
           <img src="images/books.svg" alt="" />
         </div>
+      <div class="footer-links">
+        
+       
         <div class="footer-quicklinks">
           <div class="link-title">Quick links</div>
           <div class="quicklinks">
