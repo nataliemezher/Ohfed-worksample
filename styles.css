@@ -90,6 +90,19 @@ nav {
   width: 100%;
 
 }
+.header-button{
+  background-color: #da0cfe;
+  border: none;
+  margin: 25px 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  
+}
 .popular-books{
   display: flex;
   justify-content: space-around;
@@ -366,11 +379,13 @@ footer a {
     grid-template-columns: 1fr;
     order: -1;
     justify-items: center;
+    height: 600px;
   }
   .appsection-image{
     width: 300px;
     height: 350px;
   }
+  
 
   .app-section div:nth-of-type(1) {
     order:2;
