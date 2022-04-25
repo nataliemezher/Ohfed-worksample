@@ -1,7 +1,7 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -11,18 +11,21 @@ body {
 nav {
   display: flex;
   justify-content:space-between;
-  padding-bottom: 10px ;
-  padding-left: 10px;
-  padding-right:10px;
+  padding: 10px;
 
 }
-.nav-right {
-  display: flex;
-  justify-content: space-between;
+.nav-right-list{
+ 
+} 
+
+
+.nav-right-list li {
+  display: inline;
+  text-decoration: none;
 }
-.nav-right div {
-  display: flex;
-  justify-content: space-between;
+.nav-right-list li:nth-child(-n+3) {
+  padding: 10px;
+  
 }
 .nav-logo{
   display: flex;
@@ -32,6 +35,9 @@ nav {
   height: 35px;
   color: purple;
 }
+.nav-search-mobile{
+  visibility: hidden;
+}
 
 .nav-search {
   display: flex;
@@ -39,6 +45,9 @@ nav {
 .menuhidden{ 
   visibility: hidden;
 
+}
+.dropdown{
+  visibility: hidden;
 }
 .nav-search input{
   border: none;
@@ -143,7 +152,6 @@ nav {
 .app-section {
   display: grid;
   grid-template-columns: 1fr 1fr;  
-  height: 580px;
   margin-top: 60px;
   background-color: rgb(255, 228, 255);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -161,6 +169,20 @@ nav {
 }
 .app-textsmall{
   font-size: 16px;
+}
+.app-download-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.app-store-badge{
+  width:100px ;
+  height:75px ;
+}
+.google-play-badge{
+  width: 110px;
+  height: 49.5px;
+  padding-top: 13px;
 }
 .site-questions{
   display: grid;
@@ -253,6 +275,9 @@ footer a {
   .hide-book{
     display: none;
   }
+  .dropdown{
+    visibility: visible;
+  }
   .books-booklist div {
     padding: 16px;
   }
@@ -262,15 +287,27 @@ footer a {
     display: flex;
     flex-direction: row;
   }
-  .app-section img{
-    width: 380px;
-    height: 480px;
+  .app-section{
+
+  }
+  .appsection-image img{
+    width: 350px;
+    height: 450px;
   }
   .app-textbig{
     font-size: 26px;
   }
   .app-textsmall{
     font-size: 12px;
+  }
+  .app-store-badge{
+    width:100px ;
+    height:75px ;
+  }
+  .google-play-badge{
+    width:100px ;
+    height:50px ;
+    padding-top: 11px;
   }
   .questions-img{
     display: none;
@@ -288,13 +325,17 @@ footer a {
     justify-content: center;
   }
   .nav-company {
-  visibility: hidden;
+    display: none !important;
   }
   .nav-readlist{
-    visibility: hidden;
+    display: none !important;
+  }
+  .nav-right-list li:nth-child(-n+3){
+    display: none;
+
   }
   .dropdown{ 
-    visibility:visible;
+    display: none;
   
   }
   .dropdown-content {
@@ -310,9 +351,7 @@ footer a {
     display: block;
 
   }
-  .nav-books{
-    visibility: hidden;
-  }
+  
   .drop-menu{
     visibility: visible;
   }
@@ -324,8 +363,20 @@ footer a {
   }
   .app-section {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    order: -1;
+    justify-items: center;
+  }
+  .appsection-image{
+    width: 300px;
+    height: 350px;
+  }
 
+  .app-section div:nth-of-type(1) {
+    order:2;
+  }
+  .app-section div:nth-of-type(2) {
+    order:1;
   }
   .menuhidden{ 
     visibility:visible;
@@ -334,16 +385,22 @@ footer a {
 
   nav{
     display: flex;
-    justify-content:center;
 
   }
   
   .nav-logo{
-    align-items: flex-start;
+    align-items: center;
 
   }
+  .nav-search-mobile{
+    visibility: visible;
+    
+  }
+  .nav-profile{
+    padding: 0px 8px 0px 8px;
+  }
   .headertext-small {
-    top: 60%;
+    top: 70%;
   }
   .popular-books{
   }
